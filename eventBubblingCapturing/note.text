@@ -1,0 +1,4 @@
+Event Bubbling --> happens when element receives an event and that event bubbles upto its ancestor.
+Event Capturing --> happens when a nested child receives an event then event of its parent must be called first before its event.
+In event cycle first capturing happens and then bubbling and bubbling is by default.
+It will apply on elements which are involved.
