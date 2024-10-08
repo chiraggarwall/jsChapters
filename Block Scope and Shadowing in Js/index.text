@@ -1,0 +1,23 @@
+What is block scope in js?
+---
+
+{
+    var a=0;
+    let b=1;
+    const c=2;
+}
+
+console.log(a)// function scope.
+console.log(b)//block scope means have different memory space other than global memory. so we can let & const in that memory space only.
+console.log(c)//block scope.
+
+
+What is shadowing in js?
+---
+var a=10;
+let b=10;
+{
+    var a=0;
+    let b=1; overridding of outer scope variable with inner space
+    const c=2;
+}

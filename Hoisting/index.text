@@ -1,0 +1,14 @@
+Q-4 What is hoisting in JS?
+
+console.log(x);
+var x=7;
+ getName=(a)=>{             //imp new variable declared 
+console.log("hello",a);
+}
+
+getName();
+console.log(x);
+console.log(getName);
+
+---We can access the variables even before declaring it is called hoisting.
+This happens because- As we already know that js program runs in 2 phases .First is memory allocation phase in which memory is allocated to the each variable and function in key:value format due to which we can access the variable even before declaring it .

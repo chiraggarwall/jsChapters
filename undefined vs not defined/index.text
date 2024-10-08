@@ -1,0 +1,4 @@
+undefined vs not defined?
+--- undefined=placeholder given to varibale while allocating memory space to it .
+
+--- not defined= no memory space allocated.

@@ -1,0 +1,18 @@
+What is clousers?
+---
+forms where function is defined
+function along with their lexical environment, come into play when function is invoked outside of its parent scope
+
+eg;
+
+function x(){
+    let a=10;
+    return function y(){
+        console.log(a);
+
+    }
+}
+
+let z=x();
+z();//will print a=10;
+

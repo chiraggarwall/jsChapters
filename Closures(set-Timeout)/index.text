@@ -1,0 +1,62 @@
+
+
+---Call stack manages the order of execution of execution context and js engine has only 1 callstack due to which callstack can execute one statement at a time specfic order.
+
+function x(){
+    for(var i=1;i<=5;i++){
+        //Register 5 callbacks & starts timer of 500ms which is referring to var i=6;
+        setTimeout(function (){
+            console.log(i)
+        }, i*1000);
+    }
+}
+x();
+
+callbacks that we have registered with timer needed to go back to the callstack ,so when timer expiers call back is put inside the callback queue & Event loop job is to check callback queue & put callbacks bcak to the callstack & after that callstack executes this callbacks.
+
+
+
+
+
+function x(){ 
+    for(let i=0;i<=5;i++){
+
+         //Register 5 callbacks & starts timer of 500ms which is referring to different values of i respectively as let is block scope
+       
+        setTimeout(function (){
+            console.log(i);
+        },i*1000);
+    }
+}
+x();
+
+
+
+
+
+
+due to functional scope and having lexical environment
+function x(){
+
+
+    for(var i=1;i<=5;i++){
+        function y(i){
+
+
+//Register 5 callbacks & starts timer of 500ms which is referring to different values of i respectively as i is functional scope and having lexical environment
+       
+            setTimeout(function (){
+                console.log(i);
+            }, i*1000);
+        }
+
+        y(i);
+        
+    }
+}
+
+x();
+
+
+
+microTask queues have high priority-All callback fucntions which comes through promises & mutation observer goes to this queue.

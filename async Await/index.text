@@ -1,0 +1,5 @@
+What is async?
+---It is a keyword used befor fucntion to create async function & async function always returns the promise.
+---aync await combo is used to handle the promise.
+---await used inside async fucntions
+

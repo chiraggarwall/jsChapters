@@ -1,0 +1,18 @@
+Importance of Callbacks:
+---callbacks are super important way to handle async operations in js.
+
+Drawbacks of callbacks:
+---callback hell-->nested callbacks makes code unmantainable.
+---inversion of control-->looses control of our program because we have given control of one function to other function. 
+
+What is Promise:
+---Promise is an object representing eventual completion of async js operation.
+---State of Promise: Pending, Resolved & Rejected.
+---Promise object is immutable & can be Resolved once either it will be rejected or Resolved.
+
+All callbacks issue get resolved by the promise : 
+---Inversion of control by attaching callback function to the promise makes the function call only once.
+---Callbacks hell-by using Promise chaining.
+
+
+  

@@ -1,0 +1,3 @@
+
+lexical scope?
+--- local memory space + reference to lexical(outer) environment of parent.

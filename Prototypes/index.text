@@ -1,0 +1,2 @@
+What is prototyping?
+Everything in js is Object .All objects in javascript inherit properties and methods from prototype which is also an object.

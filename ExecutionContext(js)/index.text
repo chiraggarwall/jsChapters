@@ -1,0 +1,14 @@
+How JavaScript code is executed?
+
+JavaScript is a synchronous, single-threaded language where everything happens inside an execution context. Inside the execution context, everything occurs in two phases: the memory allocation phase and the code execution phase.
+
+---Memory allocation phase:Memory is allocated to each variable and function.
+---Code execution phase :The code is executed line by line in a specific order.
+
+How call stack works in js?
+
+The call stack manages the order of execution of Execution Contexts in JavaScript.
+---When JavaScript runs, the Global Execution Context (GEC) is created and pushed onto the call stack.
+---During the code execution phase of the GEC, if a function is invoked, a new Execution Context (EC) is created and pushed onto the call stack.
+---Once the execution of all the functions and GEC is completed, its Execution Context is popped off the call stack.
+

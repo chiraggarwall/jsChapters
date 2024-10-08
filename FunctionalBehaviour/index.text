@@ -1,0 +1,23 @@
+How functions work in JS?
+---
+var x=1;
+a();
+b();
+console.log(x);
+
+fucntion a(){
+    var x=10;
+    console.log(x);
+}
+
+fucntion a(){
+    var x=10;
+    console.log(x);
+}
+
+During the 2nd phase of execution context when function get executed a new execution context is created & every execution context have their own memory space .
+
+
+Shortest program in js ?
+---When program runs global object get created which is window ("this" points to it).
+

@@ -1,0 +1,21 @@
+What is temporal dead zone in let & const?
+--- they are also hosited means that they are allocated memory but other than global which we can access after assissgning value to it.
+this time between memory allocation and assissgning value to variable is called tpd.
+
+
+               var vs let vs const?
+hoisting       yes    no     no
+redeclation    yes    no     no
+reassignemnt   yes    yes    no
+scope          fun.   block  block
+
+---We are going to compare var, let, and const based on four parameters: hoisting, redeclaration, reassignment, and scope.
+Type Error vs syntax Error vs reference Error? do it yourself.
+
+
+console.log(a)//reference Error
+const a; syntax error
+let a=0;
+{
+    var a=0; typeError
+}
